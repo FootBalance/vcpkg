@@ -25,7 +25,6 @@ vcpkg_from_github(
 file(GLOB extern "${SOURCE_PATH}/CMake/extern_*.cmake")
 file(REMOVE_RECURSE
     ${extern}
-    "${SOURCE_PATH}/third-party/easyloggingpp"
     "${SOURCE_PATH}/third-party/realsense-file/lz4"
     "${SOURCE_PATH}/third-party/stb_easy_font.h"
     "${SOURCE_PATH}/third-party/stb_image.h"
@@ -59,7 +58,7 @@ vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
     OPTIONS
         ${FEATURE_OPTIONS}
-        -DBUILD_EASYLOGGINGPP=OFF
+        -DBUILD_EASYLOGGINGPP=ON
         -DBUILD_EXAMPLES=OFF
         -DBUILD_GRAPHICAL_EXAMPLES=OFF
         -DBUILD_RS2_ALL=NO
