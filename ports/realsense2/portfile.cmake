@@ -21,6 +21,7 @@ vcpkg_from_github(
         fix_openni2.patch
         libusb.diff
         using-firmware.diff
+        stdexcept.diff
 )
 file(GLOB extern "${SOURCE_PATH}/CMake/extern_*.cmake")
 file(REMOVE_RECURSE

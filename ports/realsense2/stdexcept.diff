@@ -1,0 +1,29 @@
+diff -ur v2.56.3-fa124c44e5.clean/src/core/matcher-factory.cpp v2.56.3-fa124c44e5/src/core/matcher-factory.cpp
+--- v2.56.3-fa124c44e5.clean/src/core/matcher-factory.cpp	2024-11-25 14:24:09.000000000 +0200
++++ v2.56.3-fa124c44e5/src/core/matcher-factory.cpp	2025-09-24 10:47:44.063422171 +0300
+@@ -6,6 +6,7 @@
+ #include "stream-interface.h"
+ 
+ #include <src/sync.h>
++#include <stdexcept>
+ 
+ 
+ namespace librealsense {
+@@ -164,4 +165,4 @@
+ }
+ 
+ 
+-}  // namespace librealsense
+\ No newline at end of file
++}  // namespace librealsense
+diff -ur v2.56.3-fa124c44e5.clean/src/core/options-registry.cpp v2.56.3-fa124c44e5/src/core/options-registry.cpp
+--- v2.56.3-fa124c44e5.clean/src/core/options-registry.cpp	2024-11-25 14:24:09.000000000 +0200
++++ v2.56.3-fa124c44e5/src/core/options-registry.cpp	2025-09-24 10:45:41.594880570 +0300
+@@ -7,6 +7,7 @@
+ #include <vector>
+ #include <mutex>
+ #include <map>
++#include <stdexcept>
+ 
+ 
+ namespace librealsense {
