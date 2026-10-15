@@ -11,6 +11,7 @@ vcpkg_from_github(
         fix_openni2.patch
         libusb.diff
         disable-network-check.diff
+        preserve-process-locale.patch
         # This pkg-config fix targets vcpkg's external dependencies and disabled DDS/rosbag2.
         # Upstreaming requires handling bundled dependencies and enabled DDS/rosbag2,
         # preserving CMake 3.10 compatibility, and supporting multi-config generators.
