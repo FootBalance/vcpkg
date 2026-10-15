@@ -12,6 +12,7 @@ vcpkg_from_github(
         devendor-stb.diff
         fix_openni2.patch
         libusb.diff
+        preserve-process-locale.patch
         using-firmware.diff
         add-stdexcept.diff # https://github.com/IntelRealSense/librealsense/pull/14299
 )
